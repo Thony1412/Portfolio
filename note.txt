@@ -4,3 +4,8 @@ git commit -m "initital commit"
 git branch -M main
 git remote add origin https:
 git push -u origin main
+
+if you want to commit
+git add note.txt
+git commit -m "add note"
+git push
