@@ -6,9 +6,9 @@ import { useState } from 'react';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleSmoothScroll = (e) => {
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
-    const targetId = e.currentTarget.getAttribute("href").substring(1);
+    const targetId = e.currentTarget.getAttribute("href")!.substring(1);
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       window.scrollTo({
