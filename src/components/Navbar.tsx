@@ -6,6 +6,18 @@ import { useState } from 'react';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleSmoothScroll = (e) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <nav className="bg-[#0a0a0a] text-white p-6">
       <div className="container mx-auto md:flex justify-between items-center">
@@ -21,9 +33,10 @@ export default function Navbar() {
         </div>
         <div className={`w-full block flex-grow md:flex md:items-center md:w-auto ${isOpen ? 'block' : 'hidden'}`}>
           <div className="text-md md:flex-grow md:flex md:justify-end">
-            <Link href="/services" className="block mt-4 md:inline-block md:mt-0 hover:underline mr-4">Work</Link>
-            <Link href="/about" className="block mt-4 md:inline-block md:mt-0 hover:underline mr-4">About</Link>
-            <Link href="/become-a-rentereer" className="block mt-4 md:inline-block md:mt-0 hover:underline">Contacts</Link>
+            <a href="#project" onClick={handleSmoothScroll} className="block mt-4 md:inline-block md:mt-0 hover:underline mr-4">Work</a>
+            <a href="#skills" onClick={handleSmoothScroll} className="block mt-4 md:inline-block md:mt-0 hover:underline mr-4">Skills</a>
+            <a href="/about" onClick={handleSmoothScroll} className="block mt-4 md:inline-block md:mt-0 hover:underline mr-4">About</a>
+            <a href="/become-a-rentereer" onClick={handleSmoothScroll} className="block mt-4 md:inline-block md:mt-0 hover:underline">Contacts</a>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default function Project() {
             </p>
             <div className="md:flex md:items-center md:gap-10">
                 {/* Div 1 - Image */}
-                <div className="md:w-1/2">
+                <div className="md:w-96">
                     <div className="bg-gray-800 p-4 rounded-lg">
                         <img
                             src="/Profile-picture.png"
