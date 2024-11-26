@@ -1,5 +1,6 @@
 import { BsLinkedin } from "react-icons/bs";
 import { IoLogoGithub } from "react-icons/io";
+import Image from 'next/image';
 
 export default function Profile() {
     return (
@@ -28,11 +29,13 @@ export default function Profile() {
   
         {/* Div 2: Profile Picture */}
         <div className="bg-[#0a0a0a] w-full md:w-1/2 h-1/2 md:h-full flex justify-center p-4 ">
-          <img
+        <Image
             src="/Profile-picture.png"
             alt="Profile"
             className="rounded-2xl w-full h-96 md:h-5/6 md:w-3/4 lg:w-2/3 object-cover shadow-lg"
-          />
+            width={500} // specify the width
+            height={500} // specify the height
+        />
         </div>
       </div>
     );

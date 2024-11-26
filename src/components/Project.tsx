@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Project() {
     return (
         <div className="bg-black text-white py-10 px-4 md:px-20">
@@ -8,16 +10,18 @@ export default function Project() {
             <div className="md:flex md:items-center md:gap-10">
                 {/* Div 1 - Image */}
                 <div className="md:w-96">
-                    <div className="bg-gray-800 p-4 rounded-lg">
-                        <img
-                            src="/Profile-picture.png"
-                            alt="Project Screenshot"
-                            className="w-full rounded-lg"
-                        />
-                        <span className="block text-sm text-center mt-2 bg-gray-700 px-2 py-1 rounded-full">
-                            Conceptual Work
-                        </span>
-                    </div>
+                <div className="bg-gray-800 p-4 rounded-lg">
+                    <Image
+                    src="/Profile-picture.png"
+                    alt="Project Screenshot"
+                    className="w-full rounded-lg"
+                    width={500} // specify the width
+                    height={500} // specify the height
+                    />
+                    <span className="block text-sm text-center mt-2 bg-gray-700 px-2 py-1 rounded-full">
+                    Conceptual Work
+                    </span>
+                </div>
                 </div>
                 {/* Div 2 - Content */}
                 <div className="mt-10 md:mt-0 md:w-1/2">
