@@ -24,7 +24,7 @@ export default function About() {
         <p className="text-lg leading-7 mb-6">
           I am a front-end developer based in Sydney looking for exciting opportunities. 
           Has Mechanical Engineering background. Likes to focus on accessibility when 
-          developing. Passionate and curious about solving problems. Currently, I'm exploring 
+          developing. Passionate and curious about solving problems. Currently, I&apos;m exploring 
           ReactJS, Webflow, and a bit of designing. While I am not programming, I enjoy playing 
           football, photography, and playing Valorant. Learning more to improve skills.
         </p>
