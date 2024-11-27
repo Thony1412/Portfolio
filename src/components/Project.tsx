@@ -12,46 +12,48 @@ export default function Project() {
                 <div className="md:w-96">
                 <div className="bg-gray-800 p-4 rounded-lg">
                     <Image
-                    src="/Profile-picture.png"
+                    src="/Lionstech.png"
                     alt="Project Screenshot"
                     className="w-full rounded-lg"
                     width={500} // specify the width
                     height={500} // specify the height
                     />
-                    <span className="block text-sm text-center mt-2 bg-gray-700 px-2 py-1 rounded-full">
-                    Conceptual Work
+                    <span className="block text-sm text-center mt-2 bg-gray-700 px-2 py-1 ">
+                    Marketing Website
                     </span>
                 </div>
                 </div>
                 {/* Div 2 - Content */}
                 <div className="mt-10 md:mt-0 md:w-1/2">
-                    <h3 className="text-2xl font-semibold mb-4">Promotional landing page for our favorite show</h3>
+                    <h3 className="text-2xl font-semibold mb-4">A Marketing website integrated with chatbot</h3>
                     <p className="mb-6 text-gray-300">
-                        Teamed up with a designer to breathe life into a promotional webpage for our beloved show,
-                        Adventure Time. Delivered a fully responsive design with dynamic content capabilities,
-                        seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.
+                    This is a marketing website that features an integrated chatbot. Built with HTML,
+                     CSS, JavaScript, and Bootstrap, the site offers users an interactive experience with a 
+                     chatbot powered by Botpress. Visitors can leave real-time reviews using Firebase as a Database, where 
+                     comments from other users are visible to everyone. To ensure the reviews are authentic, 
+                     users must log in with their Google account before they can post a comment.
                     </p>
                     <div className="mb-6">
                         <p>
-                            <span className="font-semibold">Year: </span>2023
+                            <span className="font-semibold">Year: </span>2024
                         </p>
                         <p>
-                            <span className="font-semibold">Role: </span>Front-end Developer
+                            <span className="font-semibold">Role: </span>Full-stack developer
                         </p>
                     </div>
                     <div className="flex gap-4">
                         <a
-                            href="#"
-                            className="px-6 py-2 bg-green-500 text-black font-semibold rounded-md hover:bg-green-600"
+                            target="_blank" href="https://shop.lionstech.shop/"
+                            className="px-6 py-2 bg-[#b3ff00] text-black font-semibold rounded-md hover:bg-green-600"
                         >
                             Live Demo
                         </a>
-                        <a
+                        {/* <a
                             href="#"
                             className="px-6 py-2 bg-gray-700 text-white font-semibold rounded-md hover:bg-gray-600"
                         >
                             See on GitHub
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
