@@ -5,7 +5,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col items-left min-h-screen bg-[#0a0a0a] text-white 2xl:px-48">
+    <div className="flex flex-col items-left min-h-screen bg-[#0a0a0a] text-white 2xl:ml-48 xl:ml-36 lg:ml-28 md:ml-16 ml-7">
       <div className="max-w-md w-full 2xl:mt-80 xl:mt-72 lg:mt-60 md:mt-52 sm:mt-32 mt-10">
         {/* Heading */}
         <h1 className="2xl:text-7xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-2xl font-bold mb-4">LET&apos;S CONNECT</h1>
@@ -14,21 +14,28 @@ export default function Contact() {
         <p className="text-lg mb-2">
           Say hello at{' '}
           <a
-            href="mailto:robertgarcia@gmail.com"
+            href="brizathonyivand@gmail.com"
             className="text-lime-400 underline hover:text-lime-500"
           >
             brizathonyivand@gmail.com
+          </a>
+          {' '}or
+          <br></br>
+          <a
+            className="text-lime-400 hover:text-lime-500"
+          >
+            +63-9475379006
           </a>
         </p>
 
         {/* Resume */}
         <p className="text-lg mb-6">
-          For more info, here&apos;s my{' '}
-          <Link href="#" legacyBehavior>
-            <a className="text-lime-400 underline hover:text-lime-500">
-              resume
+        For more info, here&apos;s my{' '}
+        <Link href="Resume-Briza.pdf" legacyBehavior>
+            <a className="text-lime-400 underline hover:text-lime-500" download>
+            resume
             </a>
-          </Link>
+        </Link>
         </p>
         <div className="flex">
           <a target="_blank" href="https://www.linkedin.com/in/thony-ivan-briza-58325a244/" className="p-3">

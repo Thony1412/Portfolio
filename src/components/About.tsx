@@ -16,7 +16,7 @@ export default function About() {
       </div>
 
       {/* Right Section with Text */}
-      <div className="lg:w-2/3 w-full">
+      <div className="lg:w-2/3 w-full lg:ml-10">
         <h1 className="text-4xl font-bold mb-6">ABOUT ME</h1>
         <p className="text-2xl font-semibold mb-4">
           I am a front-end developer based in Sydney. Has Mechanical Engineering background.

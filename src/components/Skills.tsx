@@ -57,6 +57,18 @@ export default function Skills() {
               </li>
             </ul>
           </div>
+
+           {/* Techniques */}
+           <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-semibold mb-4 text-center">Techniques</h2>
+            <ul className="space-y-2">
+              <li className="flex items-center">
+                <span className="text-lg">Prompt Engineering</span>
+              </li>
+             
+            
+            </ul>
+          </div>
         </div>
       </div>
     </div>
