@@ -35,8 +35,8 @@ export default function Navbar() {
           <div className="text-md md:flex-grow md:flex md:justify-end">
             <a href="#project" onClick={handleSmoothScroll} className="block mt-4 md:inline-block md:mt-0 hover:underline mr-4">Work</a>
             <a href="#skills" onClick={handleSmoothScroll} className="block mt-4 md:inline-block md:mt-0 hover:underline mr-4">Skills</a>
-            <a href="/about" onClick={handleSmoothScroll} className="block mt-4 md:inline-block md:mt-0 hover:underline mr-4">About</a>
-            <a href="/become-a-rentereer" onClick={handleSmoothScroll} className="block mt-4 md:inline-block md:mt-0 hover:underline">Contacts</a>
+            <a href="#about" onClick={handleSmoothScroll} className="block mt-4 md:inline-block md:mt-0 hover:underline mr-4">About</a>
+            <a href="#contacts" onClick={handleSmoothScroll} className="block mt-4 md:inline-block md:mt-0 hover:underline">Contacts</a>
           </div>
         </div>
       </div>

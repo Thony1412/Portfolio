@@ -1,5 +1,5 @@
 import { BsLinkedin } from "react-icons/bs";
-import { IoLogoGithub } from "react-icons/io";
+import { FaGithubSquare } from "react-icons/fa";
 import Image from 'next/image';
 
 export default function Profile() {
@@ -14,7 +14,7 @@ export default function Profile() {
           I am a passionate front-end developer dedicated to creating 
           user-friendly and responsive websites. This portfolio was built using Next.js.
           </p>
-          <div className="flex space-x-4 mt-8">
+          <div className="flex mt-8">
             <button className="bg-[#b3ff00] text-black font-semibold py-2 px-4 rounded-full hover:bg-[#a0e600]">
               Contact Me
             </button>
@@ -22,7 +22,7 @@ export default function Profile() {
              <BsLinkedin size={40} />
             </a>
             <a target="_blank" href="https://github.com/Thony1412" className="p-3">
-             <IoLogoGithub size={40} />
+             <FaGithubSquare size={40} />
             </a>
           </div>
         </div>
